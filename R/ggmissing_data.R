@@ -20,9 +20,9 @@ gg_missing <- function(df=df) {
   purrr::map2_dfc(.x=df, .y=names(df), .f=~sum(is.na(.))) %>%
     tidyr::pivot_longer(dplyr::everything()) %>%
     # sort vars descending by % NA and make barplot
-    dplyr::arrange(value) %>%
-    dplyr::mutate(value = value/nrow(df),
-           name = forcats::as_factor(name)) %>%
+    dplyr::arrange(.data$value) %>%
+    dplyr::mutate(value = .data$value/nrow(df),
+                  name = forcats::as_factor(.data$name)) %>%
     # make a bar plot
     ggplot2::ggplot(
       ggplot2::aes(y = .data$name, x = .data$value)
