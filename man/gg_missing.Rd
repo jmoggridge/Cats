@@ -7,14 +7,11 @@
 gg_missing(df = df)
 }
 \arguments{
-\item{df}{}
+\item{df}{dataframe to check for missing data}
 }
 \value{
-ggplot
+ggplot object
 }
 \description{
 Missing data plot
-}
-\examples{
-gg_missing(df)
 }

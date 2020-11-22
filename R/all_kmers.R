@@ -1,6 +1,6 @@
 #' Generate all kmers of length k
 #'
-#' @param k
+#' @param k the length of kmers to generate
 #'
 #' @return character vector of kmers lexicographically
 #' @export

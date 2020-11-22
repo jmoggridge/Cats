@@ -1,26 +1,29 @@
-require(tidyverse)
 
 #' Missing data plot
 #'
-#' @param df
+#' @param df dataframe to check for missing data
 #'
-#' @return ggplot
+#' @return ggplot object
 #' @export
-#'
-#' @examples
-#' gg_missing(df)
+#' @importFrom dplyr mutate arrange
+#' @importFrom forcats as_factor
+#' @importFrom tidyr pivot_longer
+#' @importFrom purrr map2_dfc
+#' @importFrom magrittr %>%
+#' @importFrom ggplot2 ggplot geom_col labs theme_light
+
 gg_missing <- function(df=df) {
 
   ## plots % of missing values for each variable in a dataframe
   # count missing values in each column;
   purrr::map2_dfc(.x=df, .y=names(df), .f=~sum(is.na(.))) %>%
-    pivot_longer(everything()) %>%
+    tidyr::pivot_longer(everything()) %>%
     # sort vars descending by % NA and make barplot
-    arrange(value) %>%
-    mutate(value = value/nrow(df),
-           name = as_factor(name)) %>%
+    dplyr::arrange(value) %>%
+    dplyr::mutate(value = value/nrow(df),
+           name = forcats::as_factor(name)) %>%
     # make a bar plot
-    ggplot(aes(y = name, x = value)) +
+    ggplot2::ggplot(aes(y = name, x = value)) +
     geom_col() +
     theme_light() +
     labs(

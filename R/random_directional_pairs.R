@@ -1,6 +1,6 @@
 #' Generate random directional pairs from a vector of names (nodes)
 #'
-#' @param nodes
+#' @param nodes a vector of names
 #'
 #' @return dataframe with pairs as rows
 #' @export

@@ -7,7 +7,7 @@
 all_kmers(k)
 }
 \arguments{
-\item{k}{}
+\item{k}{the length of kmers to generate}
 }
 \value{
 character vector of kmers lexicographically

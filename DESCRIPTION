@@ -8,10 +8,9 @@ Authors@R:
            email = "ja.moggridge@gmail.com")
 Author: Jason Moggridge [aut, cre]
 Maintainer: Jason Moggridge <ja.moggridge@gmail.com>
-Description: meowsers
-Imports:
-  tidyverse
-License: MIT
+Description: Silly functions for doing some stuff, meowsers.
+Imports: tidyr, dplyr, forcats, purrr, ggplot2, magrittr
+License: GPL-3
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)

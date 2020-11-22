@@ -7,7 +7,7 @@
 generate_pairings(nodes)
 }
 \arguments{
-\item{nodes}{}
+\item{nodes}{a vector of names}
 }
 \value{
 dataframe with pairs as rows
