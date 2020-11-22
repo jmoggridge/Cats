@@ -8,7 +8,9 @@ Authors@R:
            email = "ja.moggridge@gmail.com")
 Author: Jason Moggridge [aut, cre]
 Maintainer: Jason Moggridge <ja.moggridge@gmail.com>
-Description: just trying to make a package
+Description: meowsers
+Imports:
+  ggplot2, dplyr, tidyr, purrr, forcats
 License: MIT
 Encoding: UTF-8
 LazyData: true
