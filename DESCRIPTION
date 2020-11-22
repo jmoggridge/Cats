@@ -1,0 +1,16 @@
+Package: Cats
+Title: Various functions that I made and might reuse one day
+Version: 0.0.0.9000
+Authors@R: 
+    person("Jason",
+           "Moggridge",
+           role = c("aut", "cre"),
+           email = "ja.moggridge@gmail.com")
+Author: Jason Moggridge [aut, cre]
+Maintainer: Jason Moggridge <ja.moggridge@gmail.com>
+Description: just trying to make a package
+License: MIT
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1
