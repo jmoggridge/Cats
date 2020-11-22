@@ -9,7 +9,7 @@ Authors@R:
 Author: Jason Moggridge [aut, cre]
 Maintainer: Jason Moggridge <ja.moggridge@gmail.com>
 Description: Silly functions for doing some stuff, meowsers.
-Imports: tidyr, dplyr, forcats, purrr, ggplot2, magrittr
+Imports: tidyr, dplyr, forcats, purrr, ggplot2, magrittr, rlang
 License: GPL-3
 Encoding: UTF-8
 LazyData: true
